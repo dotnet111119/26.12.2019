@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +36,10 @@ namespace EF_DEMO1
                 res1.ToList().ForEach(e => Console.WriteLine(JsonConvert.SerializeObject(e)));
 
                 Console.WriteLine();
+
+                //entities.EMPLOYEES.Add(new EMPLOYEE { NAME = "A", AGE = 20, ADDRESS = "B", SALARY = 80000 });
+                //entities.EMPLOYEES.Remove(entities.EMPLOYEES.ToList().FirstOrDefault(e => e.ID == 9));
+                //entities.SaveChanges();
             }
         }
     }
